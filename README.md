@@ -8,8 +8,9 @@ Clone the git repository
 ```
 $ git clone https://github.com/o-serafin/dynatrace_2023
 ```
-Build docker image
+Enter project directory and build docker image
 ```
+$ cd dynatrace_2023
 $ docker build --tag python-docker . 
 ```
 Run container with:
