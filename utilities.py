@@ -36,6 +36,7 @@ def make_request(url:str):
 
   
 def validate_input(currency:str, parameter:str, validation_type:int):
+    """Checks if user input is in correct format"""
     currencies = get_currencies()
     if currency not in currencies:
         return 'ERROR: Invalid currency code!'
