@@ -11,11 +11,11 @@ $ git clone https://github.com/o-serafin/dynatrace_2023
 Enter project directory and build docker image
 ```
 $ cd dynatrace_2023
-$ docker build --tag python-docker . 
+$ docker build -t python-docker . 
 ```
 Run container with:
 ```
-$ docker run -d -p 5000:5000 python-docker
+$ docker run -p 5000:5000 python-docker
 ```
 Visit http://127.0.0.1:5000/ or localhost:5000 in your local browser
 
