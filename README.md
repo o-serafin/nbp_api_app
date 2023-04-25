@@ -27,7 +27,7 @@ If you visit http://127.0.0.1:5000/ you will see Bootstrap 4 UI for application 
  - With currency code and the number of last quotations N, get two days with max and min exchange rate in given interval.
  - With currency code and the number of last quotations N, provide the major difference between the buy and ask rate, with a date of day.
 
-
+<img src="/static/ui.png" alt="Alt text" title="Optional title">
 
 
 ### Tests
