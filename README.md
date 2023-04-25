@@ -1,4 +1,4 @@
-# Internship NBP API App
+# Internship NBP App
 
 An app written with Flask providing certain data from public NBP API 
 
