@@ -33,7 +33,7 @@ If you visit http://127.0.0.1:5000/ you will see Bootstrap 4 UI for application 
 
 or by COMMANDS
 
-Accessing /exchanges endpoint:
+### Accessing /exchanges endpoint:
 ```
 $ curl http://127.0.0.1:5000/exchanges/{currency}/{date}
 ```
@@ -46,7 +46,7 @@ will return a string
 0.4455
 ```
 
-Accessing /min-max endpoint
+### Accessing /min-max endpoint
 ```
 $ curl  http://127.0.0.1:5000/max_min/{currency}/{n}
 ```
@@ -61,7 +61,7 @@ will return a dictionary
 
 It contains the values of minimum and maximum exchange rate over interval of last n days.
 
-Accessing /major_diff endpoint
+### Accessing /major_diff endpoint
 
 ```
 $ curl http://127.0.0.1:5000/major_diff/{currency}/{ns}
