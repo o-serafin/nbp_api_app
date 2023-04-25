@@ -1,0 +1,37 @@
+.form-control {
+    font-size: 18px;
+}
+
+.btn {
+    font-size: 18px;
+}
+
+.btn:focus {
+box-shadow: none;
+}
+
+.select {
+display: grid;
+grid-template-columns: repeat(14, 1fr);
+gap: 1px;
+}
+
+.select_item {
+padding: 10px;
+font-size: 18px;
+cursor: pointer;
+font-family: "Heebo", sans-serif;
+text-align: center;
+border-radius: 3px;
+background: #eeeeee;
+}
+
+.select_item-selected {
+background: #009578;
+color: #ffffff;
+}
+
+.lab {
+    font-size: 22px;
+    margin-top: 22px;
+} 
