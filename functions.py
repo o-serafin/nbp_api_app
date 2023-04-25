@@ -3,8 +3,8 @@ from utilities import nbp_url, make_request, validate_input
 
 def avg_exchange_rate(currency: str, date: str) -> str:
     """
-    Given a date (formatted YYYY-MM-DD) and a currency code, returns the
-    average exchange rate for that currency on the given date.
+    Takes currency code and date in format, returns
+    average exchange rate for that currency on that date.
     """
     is_data_wrong = validate_input(currency, date, 1)
     if is_data_wrong:
@@ -20,8 +20,9 @@ def avg_exchange_rate(currency: str, date: str) -> str:
 
 def major_difference(currency: str, days: str) -> dict:
     """
-    Given a currency code and the number of last quotations, returns the
-    major difference between the buy and sell rates over the last n days.
+    Takes currency code and number of last quotations (days), returns
+    a dictionary with biggest daily difference between the buy and aks 
+    rates from last n days and date when it happened.
     """
     is_data_wrong = validate_input(currency, days, 2)
     if is_data_wrong:
@@ -47,11 +48,10 @@ def major_difference(currency: str, days: str) -> dict:
 
 def min_max_average(currency: str, days: str) -> dict:
     """
-    Given a currency code and the number of last quotations, returns a
-    dictionary with the max and min average exchange rates for that currency
-    over the last n days.
+    Takes currency code and the number of last quotations (days), returns a
+    dictionary with the min and max average exchange rate for that currency
+    from last n days.
     """
-
     is_data_wrong = validate_input(currency, days, 2)
     if is_data_wrong:
         return is_data_wrong
