@@ -49,7 +49,7 @@ class IncorrectInputs(unittest.TestCase):
         content = response.content.decode('utf-8-sig')
         self.assertEqual(content, expected_result)
 
-
+        
     def test_invalid_number_of_days(self):
         expected_result = "ERROR: Number of days must be integer smaller or equal to 255!"
         currency = 'NOK'
