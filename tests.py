@@ -2,7 +2,6 @@ import requests
 import unittest
 
 root = 'http://127.0.0.1:5000/'
-
 class CorrectInputs(unittest.TestCase):
     
     def test_avg_exchange_rate(self):
@@ -15,18 +14,18 @@ class CorrectInputs(unittest.TestCase):
 
 
     def test_min_max_avg_value(self):
-        expected_result = {"max_exch_rate": 4.3742,"min_exch_rate": 4.1905}
-        currency = 'USD'
-        days = '23'
+        expected_result = {"max_exch_rate":4.7361,"min_exch_rate":4.6914}
+        currency = 'CHF'
+        days = '10'
         response = requests.get(root+f'min-max/{currency}/{days}')
         content = response.content.decode('utf-8-sig')
         self.assertEqual(eval(content), expected_result)
 
 
-    def test_min_major_diff(self):
-        expected_result = {"date": "2023-04-04","difference": "0.0084"}
-        currency = 'NOK'
-        days = '14'
+    def test_major_diff(self):
+        expected_result = {"date":"2023-04-13","difference":"0.0082"}
+        currency = 'SEK'
+        days = '10'
         response = requests.get(root+f'major-diff/{currency}/{days}')
         content = response.content.decode('utf-8-sig')
         self.assertEqual(eval(content), expected_result)
