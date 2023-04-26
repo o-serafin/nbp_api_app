@@ -48,7 +48,7 @@ will return a string
 
 ### Accessing /min-max endpoint
 ```
-$ curl  http://127.0.0.1:5000/max_min/{currency}/{n}
+$ curl  http://127.0.0.1:5000/min-max/{currency}/{n}
 ```
 Example command
 ```
