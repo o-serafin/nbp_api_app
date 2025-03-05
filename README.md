@@ -6,11 +6,11 @@ An app written with Flask providing certain data from public NBP API
 
 Clone the git repository
 ```
-$ git clone https://github.com/o-serafin/dynatrace_2023
+$ git clone https://github.com/o-serafin/nbp_api_app
 ```
 Enter project directory and build docker image
 ```
-$ cd dynatrace_2023
+$ cd nbp_api_app
 $ docker build -t python-docker . 
 ```
 Run container with:
